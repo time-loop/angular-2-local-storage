@@ -1,5 +1,5 @@
 {
-  "name": "angular-2-local-storage",
+  "name": "@time-loop/angular-2-local-storage",
   "version": "4.0.0",
   "description": "LocalStorageService for Angular 2 with mostly the same API (and most of the code) from angular-local-storage",
   "author": "Craig Spence <craigspence0@gmail.com>",
