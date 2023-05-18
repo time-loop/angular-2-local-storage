@@ -2,8 +2,6 @@
   "name": "angular-2-local-storage",
   "version": "4.0.0",
   "description": "LocalStorageService for Angular 2 with mostly the same API (and most of the code) from angular-local-storage",
-  "main": "bundles/angular-2-local-storage.umd.js",
-  "typings": "angular-2-local-storage.d.ts",
   "author": "Craig Spence <craigspence0@gmail.com>",
   "keywords": [
     "local storage",
@@ -25,18 +23,32 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": ">=7.0.0",
-    "@angular/core": ">=7.0.0",
-    "@angular/platform-browser": ">=7.0.0",
-    "rxjs": ">6.0.0"
+    "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0",
+    "@angular/platform-browser": ">=15.0.0",
+    "rxjs": ">=6.0.0"
   },
-  "module": "fesm2015/angular-2-local-storage.js",
-  "es2015": "fesm2015/angular-2-local-storage.js",
-  "esm2015": "esm2015/angular-2-local-storage.js",
-  "fesm2015": "fesm2015/angular-2-local-storage.js",
-  "metadata": "angular-2-local-storage.metadata.json",
+  "module": "fesm2015/angular-2-local-storage.mjs",
+  "es2020": "fesm2020/angular-2-local-storage.mjs",
+  "esm2020": "esm2020/angular-2-local-storage.mjs",
+  "fesm2020": "fesm2020/angular-2-local-storage.mjs",
+  "fesm2015": "fesm2015/angular-2-local-storage.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/angular-2-local-storage.mjs",
+      "es2020": "./fesm2020/angular-2-local-storage.mjs",
+      "es2015": "./fesm2015/angular-2-local-storage.mjs",
+      "node": "./fesm2015/angular-2-local-storage.mjs",
+      "default": "./fesm2020/angular-2-local-storage.mjs"
+    }
+  },
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   }
 }

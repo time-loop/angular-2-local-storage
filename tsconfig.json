@@ -23,14 +23,7 @@
   ],
 
   "angularCompilerOptions": {
-    "genDir": "compiled",
-    "debug": true,
-    "skipMetadataEmit" : false,
-    "strictMetadataEmit": true,
-    "annotateForClosureCompiler": true,
-    "skipTemplateCodegen": true,
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableResourceInlining": true,
+    "strictInjectionParameters": true
   }
 }

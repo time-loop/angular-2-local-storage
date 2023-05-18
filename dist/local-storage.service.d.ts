@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs';
 import { ILocalStorageEvent } from './local-storage-events.interface';
 import { ILocalStorageServiceConfig } from './local-storage.config.interface';
+import * as i0 from "@angular/core";
 export declare class LocalStorageService {
     isSupported: boolean;
     errors$: Observable<string>;
@@ -29,4 +30,6 @@ export declare class LocalStorageService {
     private setPrefix;
     private setStorageType;
     private setNotify;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LocalStorageService, [{ optional: true; }]>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<LocalStorageService>;
 }

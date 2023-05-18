@@ -2,8 +2,6 @@
   "name": "angular-2-local-storage",
   "version": "4.0.0",
   "description": "LocalStorageService for Angular 2 with mostly the same API (and most of the code) from angular-local-storage",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "author": "Craig Spence <craigspence0@gmail.com>",
   "keywords": ["local storage", "angular 10"],
   "scripts": {
@@ -25,22 +23,21 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": ">=7.0.0",
-    "@angular/core": ">=7.0.0",
-    "@angular/platform-browser": ">=7.0.0",
-    "rxjs": ">6.0.0"
+    "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0",
+    "@angular/platform-browser": ">=15.0.0",
+    "rxjs": ">=6.0.0"
   },
   "devDependencies": {
-    "@angular/common": "10.0.3",
-    "@angular/compiler": "10.0.3",
-    "@angular/compiler-cli": "10.0.3",
-    "@angular/core": "10.0.3",
-    "@angular/platform-browser": "10.0.3",
-    "@angular/platform-server": "10.0.3",
-    "ng-packagr": "^10.0.1",
+    "@angular/common": "15.2.9",
+    "@angular/compiler": "15.2.9",
+    "@angular/compiler-cli": "15.2.9",
+    "@angular/core": "15.2.9",
+    "@angular/platform-browser": "15.2.9",
+    "@angular/platform-server": "15.2.9",
+    "ng-packagr": "^15.2.2",
     "rxjs": "6.6.0",
-    "tsickle": "^0.39.1",
-    "typescript": "3.9.6",
-    "zone.js": "0.10.3"
+    "typescript": "4.9.5",
+    "zone.js": "0.11.8"
   }
 }

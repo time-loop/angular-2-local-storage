@@ -1,4 +1,5 @@
-import { InjectionToken, NgModule, ɵɵdefineInjectable, ɵɵinject, Injectable, Optional, Inject } from '@angular/core';
+import * as i0 from '@angular/core';
+import { InjectionToken, NgModule, Injectable, Optional, Inject } from '@angular/core';
 import { Subscriber, Observable } from 'rxjs';
 import { share } from 'rxjs/operators';
 
@@ -14,9 +15,12 @@ class LocalStorageModule {
         };
     }
 }
-LocalStorageModule.decorators = [
-    { type: NgModule }
-];
+LocalStorageModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
+LocalStorageModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "14.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageModule });
+LocalStorageModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageModule });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageModule, decorators: [{
+            type: NgModule
+        }] });
 
 const DEPRECATED = 'This function is deprecated.';
 const LOCAL_STORAGE_NOT_SUPPORTED = 'LOCAL_STORAGE_NOT_SUPPORTED';
@@ -232,19 +236,25 @@ class LocalStorageService {
         }
     }
 }
-LocalStorageService.ɵprov = ɵɵdefineInjectable({ factory: function LocalStorageService_Factory() { return new LocalStorageService(ɵɵinject(LOCAL_STORAGE_SERVICE_CONFIG, 8)); }, token: LocalStorageService, providedIn: "root" });
-LocalStorageService.decorators = [
-    { type: Injectable, args: [{
-                providedIn: 'root'
-            },] }
-];
-LocalStorageService.ctorParameters = () => [
-    { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [LOCAL_STORAGE_SERVICE_CONFIG,] }] }
-];
+LocalStorageService.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageService, deps: [{ token: LOCAL_STORAGE_SERVICE_CONFIG, optional: true }], target: i0.ɵɵFactoryTarget.Injectable });
+LocalStorageService.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageService, providedIn: 'root' });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.2.9", ngImport: i0, type: LocalStorageService, decorators: [{
+            type: Injectable,
+            args: [{
+                    providedIn: 'root'
+                }]
+        }], ctorParameters: function () {
+        return [{ type: undefined, decorators: [{
+                        type: Optional
+                    }, {
+                        type: Inject,
+                        args: [LOCAL_STORAGE_SERVICE_CONFIG]
+                    }] }];
+    } });
 
 /**
  * Generated bundle index. Do not edit.
  */
 
-export { LocalStorageModule, LocalStorageService, LOCAL_STORAGE_SERVICE_CONFIG as ɵa };
-//# sourceMappingURL=angular-2-local-storage.js.map
+export { LocalStorageModule, LocalStorageService };
+//# sourceMappingURL=angular-2-local-storage.mjs.map
